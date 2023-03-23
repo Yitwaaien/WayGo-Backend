@@ -6,6 +6,12 @@
 parameters:
 
 services:
+    App\Controller\LogoutController:
+        public: true # установите опцию "public" в true
+        tags: ['controller.service_arguments']
+        arguments:
+            - '@security.csrf.token_manager'
+
     # default configuration for services in *this* file
     _defaults:
         autowire: true      # Automatically injects dependencies in your services.
