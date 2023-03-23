@@ -1,0 +1,4 @@
+
+api_doc:
+    path: /users/1
+    controller: App\Controller\UserController::Get
