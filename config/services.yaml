@@ -6,6 +6,12 @@
 parameters:
 
 services:
+    App\Controller\LogoutController:
+        arguments:
+            $tokenStorage: '@security.token_storage'
+            $entityManager: '@doctrine.orm.entity_manager'
+        tags: [ 'controller.service_arguments' ]
+        public: true
     # default configuration for services in *this* file
     _defaults:
         autowire: true      # Automatically injects dependencies in your services.
