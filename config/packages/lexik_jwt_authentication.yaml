@@ -1,9 +1,0 @@
-lexik_jwt_authentication:
-    # ...
-    logout:
-        path:       /logout
-        target:     /
-        # Включаем проверку токена
-        invalidate_token: true
-        csrf_token_generator: lexik_jwt_authentication.csrf.token_generator
-        create_entrypoint:  true
