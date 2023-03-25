@@ -5,4 +5,13 @@ api_platform:
         json: ['application/merge-patch+json']
     swagger:
         versions: [3]
+<<<<<<< HEAD
 
+=======
+    http_cache:
+        etag:
+            weak: false
+    exception_to_status:
+        Symfony\Component\Security\Core\Exception\AuthenticationException: 401
+        Lexik\Bundle\JWTAuthenticationBundle\Exception\JWTDecodeFailureException: 401
+>>>>>>> 19a5e1714805b4f25cbe970f799bd7b11afc7ed2

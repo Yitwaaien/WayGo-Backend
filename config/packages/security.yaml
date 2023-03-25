@@ -1,17 +1,23 @@
 security:
+<<<<<<< HEAD
     encoders:
         App\Entity\User:
             algorithm: auto
+=======
+>>>>>>> 19a5e1714805b4f25cbe970f799bd7b11afc7ed2
     enable_authenticator_manager: true
     # https://symfony.com/doc/current/security.html#registering-the-user-hashing-passwords
     password_hashers:
         Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface: 'auto'
     # https://symfony.com/doc/current/security.html#loading-the-user-the-user-provider
     providers:
+<<<<<<< HEAD
         users:
             entity:
                 class: App\Entity\User
                 property: email
+=======
+>>>>>>> 19a5e1714805b4f25cbe970f799bd7b11afc7ed2
         users_in_memory: { memory: null }
     firewalls:
         dev:
