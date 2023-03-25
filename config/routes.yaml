@@ -1,5 +1,6 @@
-controllers:
-    resource:
-        path: ../src/Controller/
-        namespace: App\Controller
-    type: attribute
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+app_logout:
+  path: '/logout'
+  controller: 'App\Controller\LogoutController::logout'
